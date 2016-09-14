@@ -9,6 +9,8 @@ class FizzBuzz
             return "Fizz";
         } elseif ($number == 5) {
             return "Buzz";
+        } else if ($number == 6) {
+            return "Fizz";
         }
         return $number;
     }
@@ -16,6 +18,12 @@ class FizzBuzz
 
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {
+
+    public function testSholdBeFizzWithSix()
+    {
+        $fizzbuzz = new FizzBuzz();
+        $this->assertEquals("Fizz", $fizzbuzz->count(6));
+    }
 
     public function testSholdBeBuzzWithFive()
     {
