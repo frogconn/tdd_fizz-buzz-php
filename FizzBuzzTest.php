@@ -5,16 +5,22 @@ class FizzBuzz
 
     public function count($number)
     {
+        //Is modulo by fifteen
 
         if ($number == 15) {
             return "FizzBuzz";
         } else
-        if (($number % 3) == 0) {
+        if ($this->isModuloByThree($number)) {
             return "Fizz";
-        } elseif (($number%5) == 0) {
+        } elseif (($number % 5) == 0) {
             return "Buzz";
-        } 
+        }
         return $number;
+    }
+
+    public function isModuloByThree($number)
+    {
+        return ($number % 3) == 0;
     }
 }
 
