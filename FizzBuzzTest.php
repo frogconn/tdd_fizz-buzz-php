@@ -5,21 +5,15 @@ class FizzBuzz
 
     public function count($number)
     {
-        if ($number == 3) {
-            return "Fizz";
-        } elseif ($number == 5) {
-            return "Buzz";
-        } else if ($number == 6) {
-            return "Fizz";
-        } else if ($number == 9) {
-            return "Fizz";
-        } else if ($number == 10) {
-            return "Buzz";
-        } else if ($number == 12) {
-            return "Fizz";
-        } else if ($number == 15) {
+
+        if ($number == 15) {
             return "FizzBuzz";
-        }
+        } else
+        if (($number % 3) == 0) {
+            return "Fizz";
+        } elseif (($number%5) == 0) {
+            return "Buzz";
+        } 
         return $number;
     }
 }
