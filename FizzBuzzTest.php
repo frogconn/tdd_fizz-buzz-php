@@ -70,43 +70,43 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
         $this->assertEquals("Fizz", $fizzbuzz->count(9));
     }
 
-    public function testSholdBeEight()
+    public function testShouldBeEight()
     {
         $fizzbuzz = new FizzBuzz();
         $this->assertEquals("8", $fizzbuzz->count(8));
     }
 
-    public function testSholdBeSeven()
+    public function testShouldBeSeven()
     {
         $fizzbuzz = new FizzBuzz();
         $this->assertEquals("7", $fizzbuzz->count(7));
     }
 
-    public function testSholdBeFizzWithSix()
+    public function testShouldBeFizzWithSix()
     {
         $fizzbuzz = new FizzBuzz();
         $this->assertEquals("Fizz", $fizzbuzz->count(6));
     }
 
-    public function testSholdBeBuzzWithFive()
+    public function testShouldBeBuzzWithFive()
     {
         $fizzbuzz = new FizzBuzz();
         $this->assertEquals("Buzz", $fizzbuzz->count(5));
     }
 
-    public function testSholdBeFour()
+    public function testShouldBeFour()
     {
         $fizzbuzz = new FizzBuzz();
         $this->assertEquals("4", $fizzbuzz->count(4));
     }
 
-    public function testSholdBeFizzWithThree()
+    public function testShouldBeFizzWithThree()
     {
         $fizzbuzz = new FizzBuzz();
         $this->assertEquals("Fizz", $fizzbuzz->count(3));
     }
 
-    public function testSholdBeTwo()
+    public function testShouldBeTwo()
     {
         $fizzbuzz = new FizzBuzz();
         $this->assertEquals("2", $fizzbuzz->count(2));
