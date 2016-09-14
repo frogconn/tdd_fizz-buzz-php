@@ -19,10 +19,17 @@ class FizzBuzz
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {
 
-	public function testSholdBeSeven(){
-		$fizzbuzz  = new FizzBuzz();
-		$this->assertEquals("7",$fizzbuzz->count(7));
-	}
+    public function testSholdBeEight()
+    {
+        $fizzbuzz = new FizzBuzz();
+        $this->assertEquals("8", $fizzbuzz->count(8));
+    }
+
+    public function testSholdBeSeven()
+    {
+        $fizzbuzz = new FizzBuzz();
+        $this->assertEquals("7", $fizzbuzz->count(7));
+    }
 
     public function testSholdBeFizzWithSix()
     {
